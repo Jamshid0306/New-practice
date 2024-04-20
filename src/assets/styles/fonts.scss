@@ -1,0 +1,12 @@
+$Ruberoid: ("ExtraBold", 400),
+("Medium", 500),
+("SemiBold", 400),
+("Bold", 400);
+@each $name,
+$weight in $Ruberoid {
+    @font-face {
+        src: url(../fonts/Ruberoid-#{$name}.ttf);
+        font-family: "Ruberoid";
+        font-weight: $weight;
+    }
+}

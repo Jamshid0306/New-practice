@@ -1,0 +1,23 @@
+@import 'main.scss';
+@import 'fonts.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ruberoid';
+}
+
+.container {
+    max-width: 1285px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
