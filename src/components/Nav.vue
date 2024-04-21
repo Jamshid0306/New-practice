@@ -8,12 +8,12 @@ import OrderBtn from "@/components/UI/OrderBtn.vue";
         <img src="@/assets/images/logo_1.svg" alt="" class="logo_1-img" />
         <img src="@/assets/images/logo_2.svg" alt="" class="logo_1-img" />
       </RouterLink>
-      <div class="nav__items">
-        <RouterLink class="nav__item"  to="/">Главная</RouterLink>
-        <RouterLink class="nav__item nav__item2" to="/">Почему именно мы?</RouterLink>
-        <RouterLink class="nav__item" to="/">Контакты</RouterLink>
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#scroll_main">Главная</a></li>
+        <li class="nav__item nav__item2"><a href="#scroll_why">Почему именно мы?</a></li>
+        <li class="nav__item"><a href="#scroll_contact">Контакты</a></li>
         <OrderBtn :text="'Заказать'" />
-      </div>
+      </ul>
     </div>
   </nav>
 </template>

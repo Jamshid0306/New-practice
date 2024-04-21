@@ -12,16 +12,22 @@
         justify-content: space-between;
     }
     background: transparent;
-    padding:45px 0;
+    padding: 45px 0;
     &__items {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 40px;
     }
     &__item {
-        color: #fff;
         font-size: 20px;
         font-weight: 400;
+        &2 {
+            width: 321px;
+        }
+        & a {
+            color: #fff;
+        }
     }
     &__btn {
         &2 {
@@ -79,7 +85,7 @@
 }
 
 .header {
-    background: url(@/assets/images/Header__bg.svg) no-repeat center /cover;
+    background: url(@/assets/images/Header__bg.svg) no-repeat center / cover;
     height: 1150px;
 }
 

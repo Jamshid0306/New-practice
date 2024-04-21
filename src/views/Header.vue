@@ -6,7 +6,7 @@ import HeaderBtn from "@/components/UI/HeaderBtn.vue";
 
 
 <template>
-  <header class="header">
+  <header class="header" id="scroll_main">
     <Nav />
     <div class="container">
         <div class="header__main">

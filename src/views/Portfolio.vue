@@ -4,7 +4,7 @@ import OrderBtn from '@/components/UI/OrderBtn.vue';
 
 
 <template>
-  <section class="portfolio">
+  <section class="portfolio" id="scroll_why">
     <div class="container">
       <div class="portfolio__text-blog">
         <h2 class="portfolio__title">Наше портфолио</h2>
