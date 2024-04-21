@@ -140,9 +140,9 @@
 }
 
 .t__card {
-    max-width: 370px;
-    width: 100%;
+    max-width: 400px;
     min-height: 570px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 36px;
     width: 370px;
@@ -163,6 +163,24 @@
         line-height: 154%;
         text-align: center;
         color: rgba(255, 255, 255, 0.75);
+    }
+    &-bot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 154%;
+        color: #fff;
+    }
+    &-txt {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 154%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.4);
     }
 }
 
