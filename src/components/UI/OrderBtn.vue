@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <button class="nav__btn2">{{text}}</button>
+  <button class="nav__btn">{{text}}</button>
 
 </template>
 

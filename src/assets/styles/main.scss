@@ -46,11 +46,11 @@
 }
 
 .cs__title {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 26px;
     line-height: 123%;
     color: #fff;
-    width: 50%;
+    width: 260px;
     margin-bottom: 20px;
 }
 
@@ -80,6 +80,32 @@
 }
 
 .portfolio {
-    background: url(@/assets/images/portfolio-bg.svg) no-repeat center /cover;
+    background: url(@/assets/images/portfolio-bg.svg) no-repeat center / cover;
     height: 835px;
+    & .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 111%;
+        background: linear-gradient(149deg, #7258fe 0%, #2eecc5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 36px 0 rgba(165, 252, 235, 0.2);
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 154%;
+        max-width: 530px;
+        color: rgba(255, 255, 255, 0.65);
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }

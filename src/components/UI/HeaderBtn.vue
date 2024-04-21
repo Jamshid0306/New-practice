@@ -9,6 +9,6 @@ const props = defineProps({
 </script>
 
 <template>
-  <button class="nav__btn">{{text}} <arrow :size="32"/></button>
+  <button class="nav__btn2">{{text}} <arrow :size="32"/></button>
   
 </template>
