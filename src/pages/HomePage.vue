@@ -11,7 +11,7 @@ import Contact from "@/views/Contact.vue";
     <Header/>
     <Couse/>
     <Portfolio/>
-    <!-- <Tarifes/> -->
+    <Tarifes/>
     <Application/>
     <Contact/>
 </template>

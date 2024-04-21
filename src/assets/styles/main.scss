@@ -112,13 +112,13 @@
 
 .tarifes {
     background: url(@/assets/images/tarifes-bg.svg) no-repeat center / cover;
-    min-height: 1038px;
+    height: 1036px;
     & .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 1038px;
+        height: 1036px;
     }
     &__title {
         font-weight: 400;
@@ -132,10 +132,46 @@
     }
 }
 
+.tarif__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
 .t__card {
-    max-width: 295px;
+    max-width: 370px;
     width: 100%;
-    min-height: 411px;
+    min-height: 570px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 36px;
+    width: 370px;
+    height: 570px;
+    background: linear-gradient(155deg, #313134 0%, #292929 51.31%, #282828 100%);
+    padding: 45px;
+    color: #fff;
+    display: flex;
+    &-title {
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+    }
+    &-p {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 154%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+.t__swipe {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .application {
