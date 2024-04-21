@@ -12,7 +12,7 @@ import OrderBtn from '@/components/UI/OrderBtn.vue';
           В данном портфолио вы сможете увидеть кейсы наших работ на 2022 - 2023
           год
         </p>
-        <OrderBtn class="nav__btn4" :text="'Компьютерные версии'"/>
+        <OrderBtn class="nav__btn3" :text="'Компьютерные версии'"/>
       </div>
     </div>
   </section>

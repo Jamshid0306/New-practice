@@ -1,6 +1,9 @@
 .contact {
-    background: #1E1E1E;
+    background: #1e1e1e;
     padding: 70px 0 40px 0;
+    &__icon {
+        color: #000;
+    }
     & .container {
         display: flex;
         flex-direction: column;
@@ -11,6 +14,30 @@
             display: flex;
             flex-wrap: wrap;
             gap: 35px;
+            align-items: center;
+            margin-top: 66px;
+            margin-bottom: 25px;
+        }
+        background: #fff;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        place-items: center;
+        display: grid;
+        transition: 0.4s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            background: #2eecc5;
         }
     }
+}
+
+.footer__txt {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 106%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
 }
