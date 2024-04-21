@@ -10,7 +10,7 @@ import OrderBtn from "@/components/UI/OrderBtn.vue";
       </RouterLink>
       <div class="nav__items">
         <RouterLink class="nav__item"  to="/">Главная</RouterLink>
-        <RouterLink class="nav__item" to="/">Почему именно мы?</RouterLink>
+        <RouterLink class="nav__item nav__item2" to="/">Почему именно мы?</RouterLink>
         <RouterLink class="nav__item" to="/">Контакты</RouterLink>
         <OrderBtn :text="'Заказать'" />
       </div>
