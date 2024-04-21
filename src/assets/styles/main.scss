@@ -109,3 +109,37 @@
         margin-bottom: 40px;
     }
 }
+
+.tarifes {
+    background: url(@/assets/images/tarifes-bg.svg) no-repeat center / cover;
+    min-height: 1038px;
+    & .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 1038px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 55px;
+        background: linear-gradient(126deg, #7258fe 0%, #2eecc5 100%);
+        text-shadow: 0 0 36px 0 rgba(165, 252, 235, 0.2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 40px;
+    }
+}
+
+.t__card {
+    max-width: 295px;
+    width: 100%;
+    min-height: 411px;
+}
+
+.application {
+    background: url(@/assets/images/application-bg.svg) no-repeat center /cover;
+    min-height: 520px;
+    display: flex;
+}
