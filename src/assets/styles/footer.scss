@@ -15,6 +15,7 @@
             flex-wrap: wrap;
             gap: 35px;
             align-items: center;
+            justify-content: center;
             margin-top: 66px;
             margin-bottom: 25px;
         }
@@ -40,4 +41,22 @@
     line-height: 106%;
     text-align: center;
     color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__logo {
+    width: 100px;
+    height: 30px;
+    @media screen and (max-width: 768px) {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.contact__title {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__img {
+    width: 50%;
 }

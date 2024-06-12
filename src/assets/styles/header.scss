@@ -5,27 +5,128 @@
     gap: 5px;
 }
 
+.nav__burger {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 1s;
+    transform: scale(0);
+    @media screen and (max-width: 1024px) {
+        transform: scale(1);
+    }
+    &-btn {
+        display: block;
+        width: 50px;
+        height: 30px;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 480px) {
+            width: 35px;
+            height: 20px;
+        }
+        span {
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 13px;
+            @media screen and (max-width: 480px) {
+                top: 9px;
+            }
+        }
+    }
+    &-btn::before,
+    &-btn::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.5s;
+    }
+    &-btn::before {
+        top: 0;
+    }
+    &-btn::after {
+        bottom: 0;
+    }
+    &-btn.activeburger::before {
+        transform: rotate(45deg);
+        top: 13px;
+        @media screen and (max-width: 480px) {
+            top: 9px;
+        }
+    }
+    &-btn.activeburger::after {
+        transform: rotate(-45deg);
+        top: 13px;
+        @media screen and (max-width: 480px) {
+            top: 9px;
+        }
+    }
+    &-btn.activeburger {
+        span {
+            display: none;
+        }
+    }
+}
+
+.nav__items2 {
+    transform: scale(0);
+    transition: 0.4s;
+    position: absolute;
+    z-index: -1;
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        right: 10%;
+        gap: 10px;
+        border-radius: 10px;
+        background: #1e1e1e;
+        border: 1px solid #fff;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        top: 110%;
+        .nav__item a {
+            color: #fff;
+            padding: 10px;
+        }
+        gap: 20px;
+    }
+    &.active {
+        transform: scale(1);
+        z-index: 1;
+    }
+}
+
 .nav {
+    position: relative;
     & .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
     background: transparent;
     padding: 45px 0;
     &__items {
         display: flex;
         align-items: center;
+        width: 100%;
         justify-content: center;
         gap: 40px;
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
     }
     &__item {
         font-size: 20px;
         font-weight: 500;
         transition: 0.5s;
-        &2 {
-            width: 321px;
-        }
         & a {
             color: #fff;
         }
@@ -95,7 +196,6 @@
             gap: 10px;
             justify-content: center;
             cursor: pointer;
-            margin-top: 30px;
         }
         border: 1.5px solid #7258fe;
         border-radius: 49px;
@@ -125,6 +225,9 @@
     height: 924px;
     justify-content: center;
     gap: 20px;
+    @media screen and (max-width: 768px) {
+        align-items: center;
+    }
 }
 
 .title {
@@ -136,6 +239,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        text-align: center;
+    }
+    @media screen and (max-width: 540px) {
+        font-size: 27px;
+    }
 }
 
 .text {
@@ -144,12 +254,23 @@
     color: rgba(255, 255, 255, 0.65);
     width: 50%;
     margin-bottom: 45px;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        text-align: center;
+    }
+    @media screen and (max-width: 540px) {
+        font-size: 14px;
+    }
 }
 
 .header__btns {
     display: flex;
     align-items: center;
     gap: 20px;
+    @media screen and (max-width: 540px) {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .header__btn1 {

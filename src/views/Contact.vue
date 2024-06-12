@@ -9,7 +9,7 @@ import EmailIcon from "@/components/icons/EmailIcon.vue";
   <section class="contact" id="scroll_contact">
     <div class="container">
       <div class="contact__title">
-        <img src="@/assets/images/contact_title.svg" alt="" />
+        <img class="footer__logo" src="@/assets/images/contact_title.svg" alt="" />
       </div>
       <div class="contact__blogs">
         <a href="#" class="contact__blog">
@@ -28,7 +28,7 @@ import EmailIcon from "@/components/icons/EmailIcon.vue";
           <EmailIcon class="contact__icon" />
         </a>
       </div>
-      <img src="@/assets/images/footer-logo.svg" alt="" />
+      <img class="footer__img" src="@/assets/images/footer-logo.svg" alt="" />
       <p class="footer__txt">Политика сайта и обработка персональных данных</p>
     </div>
   </section>
